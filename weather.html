@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <title>weather app</title>
+        <link rel="stylesheet" href="weather.css">
+    </head>
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="checkbox"/>
+        <label for="checkbox">
+            <i class="fa fa-bars" id="open"></i>
+            <i class="fa fa-times" id="close"></i>
+        </label>
+        <img src="logo.png" alt="logo"/>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="weather.html" class="active">Weather App</a></li>
+            <li><a href="budget.html">Budget</a></li>
+            <li><a href="ToDo.html">Notes</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+    <div id="app-container">
+        <div id="Location">
+           <p>!!turn on Location</p>
+        </div>
+        <div id="temp">
+           <img id="temp-icon" src="https://www.flaticon.com/svg/static/icons/svg/2892/2892041.svg" alt="Refresh and allow locations">
+           <p><span id="temp-value">not found</span><span id="temp-unit">&#176C</span></p>
+        </div>
+        <div id="climate">
+           <p>oops</p>
+        </div>
+    </div>
+    </body>
+    <script src="weather.js"></script>
+</body>
+</html>

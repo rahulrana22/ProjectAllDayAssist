@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* {
+  box-sizing: border-box;
+}*/
+.navbar ul li  a.active,
+.navbar ul li a:hover{
+   background: red;
+   border-radius: 2px;
+}
+
+body {
+  
+  /* background-color: rgb(36, 32, 32); */
+  /* color: white; */
+  /*justify-content: center;*/
+  align-items: top;
+  min-height: 0vh;
+  margin: 0;
+  background-color: rgb(27, 130, 156);
+}
+
+.title {
+  background-color: #0000e6;
+  opacity: 0.9;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.container {
+  padding: 10px 40px;
+  border-radius: 16px;
+  border: 3px solid white;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+
+transform: translate(-50%, -50%);
+  /* width: 350px; */
+  background-color: whitesmoke;
+}
+
+h1 {
+  letter-spacing: 2px;
+  margin: 0;
+  margin: 10px 0 10px;
+  text-transform: uppercase;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: blue;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  color: azure;
+}
+#balance {
+  color: azure;
+}
+
+.income-expense {
+  background-color:  #0000e6;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 16px;
+ }
+
+.income-expense > div {
+  flex: 1;
+  text-align: center;
+}
+
+/* .income-expense > div:first-of-type {
+  border-right: 0.5px solid rgb(0, 0, 0);
+} */
+
+.income,
+.expense,
+#balance {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  font-weight: bolder;
+}
+
+.income {
+  color: green;
+}
+.expense {
+  color: #c34234d3;
+}
+#balance {
+  color: rgb(72, 90, 255);
+}
+.bg-dark {
+  background-color: black;
+  margin: 0 2px;
+
+  border-radius: 3px;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid silver;
+  border-radius: 16px;
+  /* display: block; */
+  padding: 5px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 1px 2px 1px #000000;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 8px 0;
+  border-radius: 16px;
+  outline: none;
+  background-color:  #0000e6;
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.btn:hover {
+  color:  #0000e6;
+  background-color: whitesmoke;
+}
+
+.delete-btn {
+  background-color: rgb(139, 192, 235);
+  border-radius: 1rem;
+  outline: none;
+  float: right;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+#text:focus,
+#amount:focus {
+  width: 110%;
+  transition: 0.5s;
+  border-bottom: 2px solid steelblue;
+  border-right: 2px solid steelblue;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+}
+ul li {
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.fa {
+  color: steelblue;
+}
+.fa:hover {
+  transform: rotate(20deg);
+}
+
+#error_msg {
+  color: red;
+  background-color: rgb(224, 189, 183);
+  font-weight: bolder;
+  padding: 0 10px;
+  border-radius: 1rem;
+}
+
+.list {
+  color: red;
+}
+
+.minus,
+.plus {
+  margin-bottom: 8px;
+  border-bottom: 1px solid blue;/*rgb(177, 177, 177)*/
+}
+.minus:hover,
+.plus:hover {
+  background-color: slategray;
+  cursor: pointer;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('index.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+img{
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    left: 5%;
+    top: 6px;
+}
+
+nav{
+    height: 80px;
+    background:rgb(150, 150, 187);
+    font-size: medium;
+}
+
+ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 25px;
+}
+
+li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 15px;
+}
+
+
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#open ,#close
+{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;    
+}
+
+#checkbox
+{
+    display: none;
+}
+
+
+@media all and ( max-width: 700px )
+{
+    #open{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #46729e;
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        transition: left 0.5s;
+    }
+
+    li{
+        display: block;
+        margin: 20px 0px;
+    }
+
+    #checkbox:checked ~ ul{
+        left: 0;
+    }
+
+    #checkbox:checked ~ label #open{
+        display: none;
+    }
+
+    #checkbox:checked ~ label #close{
+        display: block;
+    }
+}
+@media all and ( max-width: 700px )
+{
+    /* write here code  */
+}

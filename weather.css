@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 140vh;
+    background-color: gray;
+    background-image: linear-gradient(rgb(14, 36, 165),rgb(17, 147, 223));
+}
+#app-container 
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 140vh;
+}
+#temp
+{
+    text-align: center;
+}
+#temp #temp-value
+{
+    color: #fff;
+    font-size: 5rem;
+}
+#temp #temp-unit
+{
+    color:#fff;
+    font-size: 4rem;
+}
+#temp-icon
+{
+    margin: 5rem;
+    width: 40%;
+    height: auto;
+}
+#Location
+{
+   font-family: sans-serif;
+   color: #e0e0e0;
+   font-size: 2.5rem;
+}
+#climate
+{
+    color: #e0e0e0;
+    font-size: 2.5rem;
+}
+
+/* 
+.wrapper .navbar{
+    height: 90px;
+    width: 100%;
+    background:rgb(0,0,0,0.4);
+    position: fixed;
+   }
+.wrapper .navbar .logo {
+   width: 300px;
+   height: 95px;
+   padding: 7px 65px;
+   }
+.wrapper .navbar ul{
+   float: right;
+   margin-right: 20px;
+   }
+.wrapper .navbar ul li{
+   list-style:none;
+   margin: 0 8px;
+   display: inline-block;
+   line-height: 80px;
+   }
+.wrapper .navbar ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 24px;
+   padding: 6px 13px;
+   font-family: arial Black;
+   }
+.wrapper .navbar ul li  a.active,
+.wrapper .navbar ul li a:hover{
+   background: red;
+   border-radius: 2px;
+   }
+ */
+ .navbar ul li  a.active,
+ .navbar ul li a:hover{
+    background: red;
+    border-radius: 2px;
+ }
+
+ body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('index.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+}
+
+img{
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    left: 5%;
+    top: 6px;
+}
+
+nav{
+    height: 80px;
+    background:rgb(150, 150, 187);
+    font-size: medium;
+}
+
+ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 25px;
+}
+
+li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 15px;
+}
+
+
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#open ,#close
+{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;    
+}
+
+#checkbox
+{
+    display: none;
+}
+
+
+@media all and ( max-width: 700px )
+{
+    #open{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #46729e;
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        transition: left 0.5s;
+    }
+
+    li{
+        display: block;
+        margin: 20px 0px;
+    }
+
+    #checkbox:checked ~ ul{
+        left: 0;
+    }
+
+    #checkbox:checked ~ label #open{
+        display: none;
+    }
+
+    #checkbox:checked ~ label #close{
+        display: block;
+    }
+}

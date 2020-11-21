@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('index.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+img{
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    left: 5%;
+    top: 6px;
+}
+
+nav{
+    height: 80px;
+    background:rgb(150, 150, 187);
+    font-size: medium;
+}
+
+ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 25px;
+}
+
+li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 15px;
+}
+
+
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#open ,#close
+{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;    
+}
+
+#checkbox
+{
+    display: none;
+}
+
+
+@media all and ( max-width: 700px )
+{
+    #open{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #46729e;
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        transition: left 0.5s;
+    }
+
+    li{
+        display: block;
+        margin: 20px 0px;
+    }
+
+    #checkbox:checked ~ ul{
+        left: 0;
+    }
+
+    #checkbox:checked ~ label #open{
+        display: none;
+    }
+
+    #checkbox:checked ~ label #close{
+        display: block;
+    }
+}
+.navbar ul li  a.active,
+.navbar ul li a:hover{
+   background: red;
+   border-radius: 2px;
+}
