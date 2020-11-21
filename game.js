@@ -117,7 +117,7 @@ if(ballLeft<=rightPaddleBound.right &&
 
 ball.style.top= y==true?ballTop+4 +"px":ballTop-4+"px";
 ball.style.left= x==true?ballLeft+4 +"px":ballLeft-4 +"px";
-//requestAnimationFrame(moveBall);
+requestAnimationFrame(moveBall);
 
 }
 
